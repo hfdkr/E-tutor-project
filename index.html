@@ -22,6 +22,7 @@
              --color-oronge-primary: #FFEEE8;
              --color-oronge: #FF6636;
              --color-gray-700: #4E5566;
+             --color-oronge-700: #993D20;
              /* fonts */
               --font-inter: "Inter", sans-serif;
             /* text size */
@@ -52,6 +53,9 @@
         }
         .button{
             @apply  px-[24px] h-[48px] text-base font-semibold tracking-[-0.8%] font-inter
+        }
+        .section{
+            @apply container my-[0px] mx-auto bg-gradient-to-b from-[#F0F2F500] to-[#F0F2F5] py-2
         }
         .h2{
             @apply text-7xl max-w-[1024px] font-semibold font-inter tracking-[-2%] text-black
@@ -129,7 +133,7 @@
         </div>
     </header>
     <main class="">
-        <section class="container my-[0px] mx-auto bg-gradient-to-b from-[#F0F2F500] to-[#F0F2F5] py-2">
+        <section class="section">
             <div class="flex">
                 <div class="bg-neutral-white py-[35px] px-[162px] items-center">
                     <h2 class="h2">Learn with expert anytime anywhere</h2>
@@ -143,145 +147,358 @@
             </div>
         </section>
         <section class="py-16">
-  <div class="mx-auto max-w-6xl px-4">
-    <!-- Title -->
-    <h2 class="text-center text-3xl font-extrabold text-slate-900">
-      Browse top category
-    </h2>
+            <div class="mx-auto max-w-6xl px-4">
+                <!-- Title -->
+                <h2 class="text-center text-3xl font-extrabold text-slate-900">
+                    Browse top category
+                </h2>
 
-    <!-- Grid -->
-    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-      <!-- Card -->
-      <a href="#" class="flex items-center gap-4 rounded-xl bg-indigo-50 px-6 py-5">
-        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
-          <img src="./images/Cpu.png" class="h-6 w-6" alt="">
-        </div>
-        <div>
-          <div class="font-semibold text-slate-900">Label</div>
-          <div class="text-sm text-slate-500">63,476 Courses</div>
-        </div>
-      </a>
+                <!-- Grid -->
+                <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                    <!-- Card -->
+                    <div class="flex items-center gap-4 bg-[#EBEBFF] px-6 py-5">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
+                            <img src="./images/Cpu.png" class="h-6 w-6" alt="">
+                        </div>
+                        <div>
+                            <div class="font-semibold text-slate-900">Label</div>
+                            <div class="text-sm text-slate-500">63,476 Courses</div>
+                        </div>
+                    </div>
 
-      <a href="#" class="flex items-center gap-4 rounded-xl bg-green-50 px-6 py-5">
-        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
-          <img src="./images/Handshake.png" class="h-6 w-6" alt="">
-        </div>
-        <div>
-          <div class="font-semibold text-slate-900">Business</div>
-          <div class="text-sm text-slate-500">52,822 Courses</div>
-        </div>
-      </a>
+                    <div class="flex items-center gap-4  bg-[#E1F7E3] px-6 py-5">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
+                            <img src="./images/Handshake.png" class="h-6 w-6" alt="">
+                        </div>
+                        <div>
+                            <div class="font-semibold text-slate-900">Business</div>
+                            <div class="text-sm text-slate-500">52,822 Courses</div>
+                        </div>
+                    </div>
 
-      <a href="#" class="flex items-center gap-4 rounded-xl bg-orange-50 px-6 py-5">
-        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
-          <img src="./images/CreditCard.png" class="h-6 w-6" alt="">
-        </div>
-        <div>
-          <div class="font-semibold text-slate-900">Finance & Accounting</div>
-          <div class="text-sm text-slate-500">33,841 Courses</div>
-        </div>
-      </a>
+                    <div class="flex items-center gap-4 bg-[#FFF2E5] px-6 py-5">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
+                            <img src="./images/CreditCard.png" class="h-6 w-6" alt="">
+                        </div>
+                        <div>
+                            <div class="font-semibold text-slate-900">Finance & Accounting</div>
+                            <div class="text-sm text-slate-500">33,841 Courses</div>
+                        </div>
+                    </div>
 
-      <a href="#" class="flex items-center gap-4 rounded-xl bg-rose-50 px-6 py-5">
-        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
-          <img src="./images/ChartBarHorizontal.png" class="h-6 w-6" alt="">
-        </div>
-        <div>
-          <div class="font-semibold text-slate-900">IT & Software</div>
-          <div class="text-sm text-slate-500">22,649 Courses</div>
-        </div>
-      </a>
+                    <div class="flex items-center gap-4 bg-[#FFF0F0] px-6 py-5">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
+                            <img src="./images/ChartBarHorizontal.png" class="h-6 w-6" alt="">
+                        </div>
+                        <div>
+                            <div class="font-semibold text-slate-900">IT & Software</div>
+                            <div class="text-sm text-slate-500">22,649 Courses</div>
+                        </div>
+                    </div>
 
-      <a href="#" class="flex items-center gap-4 rounded-xl bg-white px-6 py-5 shadow-sm ring-1 ring-slate-100">
-        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-orange-500">
-          <img src="./images/BugDroid.png" class="h-6 w-6" alt="">
-        </div>
-        <div>
-          <div class="font-semibold text-slate-900">Personal Development</div>
-          <div class="text-sm text-slate-500">20,126 Courses</div>
-        </div>
-      </a>
+                    <div class="flex items-center gap-4 bg-[#FFFFFF] px-6 py-5 shadow-sm ring-1 ring-slate-100">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-orange-500">
+                            <img src="./images/BugDroid.png" class="h-6 w-6" alt="">
+                        </div>
+                        <div>
+                            <div class="font-semibold text-slate-900">Personal Development</div>
+                            <div class="text-sm text-slate-500">20,126 Courses</div>
+                        </div>
+                    </div>
 
-      <a href="#" class="flex items-center gap-4 rounded-xl bg-slate-50 px-6 py-5">
-        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
-          <img src="./images/Receipt.png" class="h-6 w-6" alt="">
-        </div>
-        <div>
-          <div class="font-semibold text-slate-900">Office Productivity</div>
-          <div class="text-sm text-slate-500">13,932 Courses</div>
-        </div>
-      </a>
+                    <div class="flex items-center gap-4 bg-[#F5F7FA] px-6 py-5">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
+                            <img src="./images/Receipt.png" class="h-6 w-6" alt="">
+                        </div>
+                        <div>
+                            <div class="font-semibold text-slate-900">Office Productivity</div>
+                            <div class="text-sm text-slate-500">13,932 Courses</div>
+                        </div>
+                    </div>
 
-      <a href="#" class="flex items-center gap-4 rounded-xl bg-indigo-50 px-6 py-5">
-        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
-          <img src="./images/MegaphoneSimple.png" class="h-6 w-6" alt="">
-        </div>
-        <div>
-          <div class="font-semibold text-slate-900">Marketing</div>
-          <div class="text-sm text-slate-500">12,068 Courses</div>
-        </div>
-      </a>
+                    <div class="flex items-center gap-4  bg-[#EBEBFF] px-6 py-5">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
+                            <img src="./images/MegaphoneSimple.png" class="h-6 w-6" alt="">
+                        </div>
+                        <div>
+                            <div class="font-semibold text-slate-900">Marketing</div>
+                            <div class="text-sm text-slate-500">12,068 Courses</div>
+                        </div>
+                    </div>
 
-      <a href="#" class="flex items-center gap-4 rounded-xl bg-white px-6 py-5 shadow-sm ring-1 ring-slate-100">
-        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white ring-1 ring-slate-200">
-          <img src="./images/Camera.png" class="h-6 w-6" alt="">
-        </div>
-        <div>
-          <div class="font-semibold text-slate-900">Photography & Video</div>
-          <div class="text-sm text-slate-500">6,196 Courses</div>
-        </div>
-      </a>
+                    <div class="flex items-center gap-4  bg-[#F5F7FA] px-6 py-5 shadow-sm ring-1 ring-slate-100">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-lg bg-white ring-1 ring-slate-200">
+                            <img src="./images/Camera.png" class="h-6 w-6" alt="">
+                        </div>
+                        <div>
+                            <div class="font-semibold text-slate-900">Photography & Video</div>
+                            <div class="text-sm text-slate-500">6,196 Courses</div>
+                        </div>
+                    </div>
 
-      <a href="#" class="flex items-center gap-4 rounded-xl bg-orange-50 px-6 py-5">
-        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
-          <img src="./images/Package.png" class="h-6 w-6" alt="">
-        </div>
-        <div>
-          <div class="font-semibold text-slate-900">Lifestyle</div>
-          <div class="text-sm text-slate-500">2,736 Courses</div>
-        </div>
-      </a>
+                    <div class="flex items-center gap-4  bg-[#FFF2E5] px-6 py-5">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
+                            <img src="./images/Package.png" class="h-6 w-6" alt="">
+                        </div>
+                        <div>
+                            <div class="font-semibold text-slate-900">Lifestyle</div>
+                            <div class="text-sm text-slate-500">2,736 Courses</div>
+                        </div>
+                    </div>
 
-      <a href="#" class="flex items-center gap-4 rounded-xl bg-rose-50 px-6 py-5">
-        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
-          <img src="./images/PenNib.png" class="h-6 w-6" alt="">
-        </div>
-        <div>
-          <div class="font-semibold text-slate-900">Design</div>
-          <div class="text-sm text-slate-500">2,600 Courses</div>
-        </div>
-      </a>
+                    <div class="flex items-center gap-4  bg-[#FFEEE8] px-6 py-5">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
+                            <img src="./images/PenNib.png" class="h-6 w-6" alt="">
+                        </div>
+                        <div>
+                            <div class="font-semibold text-slate-900">Design</div>
+                            <div class="text-sm text-slate-500">2,600 Courses</div>
+                        </div>
+                    </div>
 
-      <a href="#" class="flex items-center gap-4 rounded-xl bg-green-50 px-6 py-5">
-        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
-          <img src="./images/FirstAidKit.png" class="h-6 w-6" alt="">
-        </div>
-        <div>
-          <div class="font-semibold text-slate-900">Health & Fitness</div>
-          <div class="text-sm text-slate-500">1,678 Courses</div>
-        </div>
-      </a>
+                    <div class="flex items-center gap-4  bg-[#E1F7E3] px-6 py-5">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
+                            <img src="./images/FirstAidKit.png" class="h-6 w-6" alt="">
+                        </div>
+                        <div>
+                            <div class="font-semibold text-slate-900">Health & Fitness</div>
+                            <div class="text-sm text-slate-500">1,678 Courses</div>
+                        </div>
+                    </div>
 
-      <a href="#" class="flex items-center gap-4 rounded-xl bg-orange-50 px-6 py-5">
-        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
-          <img src="./images/Headphones.png" class="h-6 w-6" alt="">
-        </div>
-        <div>
-          <div class="font-semibold text-slate-900">Music</div>
-          <div class="text-sm text-slate-500">959 Courses</div>
-        </div>
-      </a>
-    </div>
+                    <div class="flex items-center gap-4  bg-[#FFF2E5] px-6 py-5">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
+                            <img src="./images/Headphones.png" class="h-6 w-6" alt="">
+                        </div>
+                        <div>
+                            <div class="font-semibold text-slate-900">Music</div>
+                            <div class="text-sm text-slate-500">959 Courses</div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-10 flex items-center text-center justify-center gap-2 text-sm">
+                    <span class="text-slate-500">We have more category & subcategory.</span>
+                    <a href="#" class="font-semibold text-orange-500 hover:text-orange-600">
+                        Browse All
+                    </a>
+                    <img src="./images/ArrowRight.png" alt="right-buton">
+                </div>
+        </section>
+        <section class="container my-[0px] mx-auto bg-gradient-to-b from-[#F0F2F500] to-[#F0F2F5] py-2">
+            <div class="mx-auto max-w-6xl px-4">
+                <!-- Title -->
+                <h2 class="text-center text-3xl font-extrabold text-slate-900">
+                    Best selling courses
+                </h2>
+                <!-- Grid -->
+                <div class="mt-10 grid gap-6 grid-cols-4">
+                    <!-- Card -->
+                    <div class="items-center space-y-[15px]">
+                        <div class="flex items-center justify-center rounded-lg">
+                            <img src="./images/Course Images.png" alt="">
+                        </div>
+                        <div>
+                            <div class="mx-[14px] text-center font-semibold space-y-[14px] text-slate-900">
+                                <div class="flex justify-between">
+                                    <span class="bg-[#FFF2E5] text-oronge-700 px-[6px] py-[4px]">Design</span>
+                                    <span class="text-oronge">$57</span>
+                                </div>
+                                <div>
+                                    <p class="text-start max-w-[450px]">Machine Learning A-Z™: Hands-On Python & R In
+                                        Data...</p>
+                                </div>
+                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border[#E9EAF0]">
+                                    <div class="flex gap-3 mt-[14px]">
+                                        <img src="./images/Vector(2).png" alt="">
+                                        <span>5.0</span>
+                                    </div>
+                                    <span class="mt-[14px]">265.7K students</span>
+                                </div>
+                            </div>
 
-    <!-- Bottom line -->
-    <div class="mt-10 flex items-center justify-center gap-2 text-sm">
-      <span class="text-slate-500">We have more category & subcategory.</span>
-      <a href="#" class="font-semibold text-orange-500 hover:text-orange-600">
-        Browse All →
-      </a>
-    </div>
-  </div>
-</section>
+                        </div>
+                    </div>
+                    <div class="items-center space-y-[15px]">
+                        <div class="flex items-center justify-center rounded-lg">
+                            <img src="./images/Course Images.png" alt="">
+                        </div>
+                        <div>
+                            <div class="mx-[14px] text-center font-semibold space-y-[14px] text-slate-900">
+                                <div class="flex justify-between">
+                                    <span class="bg-[#FFF2E5] text-oronge-700 px-[6px] py-[4px]">Design</span>
+                                    <span class="text-oronge">$57</span>
+                                </div>
+                                <div>
+                                    <p class="text-start max-w-[450px]">Machine Learning A-Z™: Hands-On Python & R In
+                                        Data...</p>
+                                </div>
+                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border[#E9EAF0]">
+                                    <div class="flex gap-3 mt-[14px]">
+                                        <img src="./images/Vector(2).png" alt="">
+                                        <span>5.0</span>
+                                    </div>
+                                    <span class="mt-[14px]">265.7K students</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="items-center space-y-[15px]">
+                        <div class="flex items-center justify-center rounded-lg">
+                            <img src="./images/Course Images.png" alt="">
+                        </div>
+                        <div>
+                            <div class="mx-[14px] text-center font-semibold space-y-[14px] text-slate-900">
+                                <div class="flex justify-between">
+                                    <span class="bg-[#FFF2E5] text-oronge-700 px-[6px] py-[4px]">Design</span>
+                                    <span class="text-oronge">$57</span>
+                                </div>
+                                <div>
+                                    <p class="text-start max-w-[450px]">Machine Learning A-Z™: Hands-On Python & R In
+                                        Data...</p>
+                                </div>
+                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border[#E9EAF0]">
+                                    <div class="flex gap-3 mt-[14px]">
+                                        <img src="./images/Vector(2).png" alt="">
+                                        <span>5.0</span>
+                                    </div>
+                                    <span class="mt-[14px]">265.7K students</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="items-center space-y-[15px]">
+                        <div class="flex items-center justify-center rounded-lg">
+                            <img src="./images/Course Images.png" alt="">
+                        </div>
+                        <div>
+                            <div class="mx-[14px] text-center font-semibold space-y-[14px] text-slate-900">
+                                <div class="flex justify-between">
+                                    <span class="bg-[#FFF2E5] text-oronge-700 px-[6px] py-[4px]">Design</span>
+                                    <span class="text-oronge">$57</span>
+                                </div>
+                                <div>
+                                    <p class="text-start max-w-[450px]">Machine Learning A-Z™: Hands-On Python & R In
+                                        Data...</p>
+                                </div>
+                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border[#E9EAF0]">
+                                    <div class="flex gap-3 mt-[14px]">
+                                        <img src="./images/Vector(2).png" alt="">
+                                        <span>5.0</span>
+                                    </div>
+                                    <span class="mt-[14px]">265.7K students</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="items-center space-y-[15px]">
+                        <div class="flex items-center justify-center rounded-lg">
+                            <img src="./images/Course Images.png" alt="">
+                        </div>
+                        <div>
+                            <div class="mx-[14px] text-center font-semibold space-y-[14px] text-slate-900">
+                                <div class="flex justify-between">
+                                    <span class="bg-[#FFF2E5] text-oronge-700 px-[6px] py-[4px]">Design</span>
+                                    <span class="text-oronge">$57</span>
+                                </div>
+                                <div>
+                                    <p class="text-start max-w-[450px]">Machine Learning A-Z™: Hands-On Python & R In
+                                        Data...</p>
+                                </div>
+                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border[#E9EAF0]">
+                                    <div class="flex gap-3 mt-[14px]">
+                                        <img src="./images/Vector(2).png" alt="">
+                                        <span>5.0</span>
+                                    </div>
+                                    <span class="mt-[14px]">265.7K students</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="items-center space-y-[15px]">
+                        <div class="flex items-center justify-center rounded-lg">
+                            <img src="./images/Course Images.png" alt="">
+                        </div>
+                        <div>
+                            <div class="mx-[14px] text-center font-semibold space-y-[14px] text-slate-900">
+                                <div class="flex justify-between">
+                                    <span class="bg-[#FFF2E5] text-oronge-700 px-[6px] py-[4px]">Design</span>
+                                    <span class="text-oronge">$57</span>
+                                </div>
+                                <div>
+                                    <p class="text-start max-w-[450px]">Machine Learning A-Z™: Hands-On Python & R In
+                                        Data...</p>
+                                </div>
+                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border[#E9EAF0]">
+                                    <div class="flex gap-3 mt-[14px]">
+                                        <img src="./images/Vector(2).png" alt="">
+                                        <span>5.0</span>
+                                    </div>
+                                    <span class="mt-[14px]">265.7K students</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="items-center space-y-[15px]">
+                        <div class="flex items-center justify-center rounded-lg">
+                            <img src="./images/Course Images.png" alt="">
+                        </div>
+                        <div>
+                            <div class="mx-[14px] text-center font-semibold space-y-[14px] text-slate-900">
+                                <div class="flex justify-between">
+                                    <span class="bg-[#FFF2E5] text-oronge-700 px-[6px] py-[4px]">Design</span>
+                                    <span class="text-oronge">$57</span>
+                                </div>
+                                <div>
+                                    <p class="text-start max-w-[450px]">Machine Learning A-Z™: Hands-On Python & R In
+                                        Data...</p>
+                                </div>
+                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border[#E9EAF0]">
+                                    <div class="flex gap-3 mt-[14px]">
+                                        <img src="./images/Vector(2).png" alt="">
+                                        <span>5.0</span>
+                                    </div>
+                                    <span class="mt-[14px]">265.7K students</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="items-center space-y-[15px]">
+                        <div class="flex items-center justify-center rounded-lg">
+                            <img src="./images/Course Images.png" alt="">
+                        </div>
+                        <div>
+                            <div class="mx-[14px] text-center font-semibold space-y-[14px] text-slate-900">
+                                <div class="flex justify-between">
+                                    <span class="bg-[#FFF2E5] text-oronge-700 px-[6px] py-[4px]">Design</span>
+                                    <span class="text-oronge">$57</span>
+                                </div>
+                                <div>
+                                    <p class="text-start max-w-[450px]">Machine Learning A-Z™: Hands-On Python & R In
+                                        Data...</p>
+                                </div>
+                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border[#E9EAF0]">
+                                    <div class="flex gap-3 mt-[14px]">
+                                        <img src="./images/Vector(2).png" alt="">
+                                        <span>5.0</span>
+                                    </div>
+                                    <span class="mt-[14px]">265.7K students</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+
+        </section>
     </main>
 </body>
 
