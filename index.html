@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Tutor</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <style type="text/tailwindcss">
+        @theme{
+             --color-dark-gray: #1D2026;
+             --color-gray-black: #8C94A3;
+             --color-gray-white: #FFFFFF;
+             --color-gray:#E9EAF0;
+             --color-black: #1D2026;
+             --color-oronge-primary: #FFEEE8;
+             --color-oronge: #FF6636;
+             /* fonts */
+              --font-inter: "Inter", sans-serif;
+            /* text size */
+            --text-3xl: 32px;
+            --text-3xl-line-height: 124%;
+            --text-base:16px;
+             --text-base-line-height: 48px;
+             
+        }
+        .div-hero{
+            @apply flex justify-between bg-dark-gray text-white
+        }
+        .nav{
+            @apply flex gap-[8px] text-gray-black font-inter font-medium text-sm pl-[32px]
+        }
+        .home-1{
+            @apply text-gray-white border-t-2 border-orange-500 p-[16px]
+        }
+        header{
+            @apply px-[32px] my-[24px] flex justify-between
+        }
+        .div-bar{
+            @apply flex px-[32px] text-gray-black font-normal text-sm
+        }
+        .button{
+            @apply  px-[24px] h-[48px] text-base font-semibold tracking-[-0.8%] font-inter
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-hero">
+        <nav class="nav">
+            <a href="#Home" class="home-1">Home</a>
+            <a href="#Courses" class="p-[16px]">Courses</a>
+            <a href="#About" class="p-[16px]">About</a>
+            <a href="#Contact" class="p-[16px]">Contact</a>
+            <a href="#Instructor" class="p-[16px]">Become an Instructor</a>
+        </nav>
+        <div class="div-bar">
+            <div class="flex gap-[6px] p-[16px]">
+                <span>USD</span>
+                <span class="mt-[10px]">
+                    <img src="./images/Vector(1).png" alt="drop-down">
+                </span>
+            </div>
+            <div class="flex gap-[6px] p-[16px]">
+                <span>English</span>
+                <span class="mt-[10px]">
+                    <img src="./images/Vector(1).png" alt="drop-down">
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="flex items-center justify-between gap-[16px]">
+            <div class="flex items-center ">
+                <img src="./images/logo.png" alt="Logo">
+                <h1 class="text-3xl font-semibold tracking-[-3%] text-black font-inter pl-[8px] pr-[50px]">E-tutor</h1>
+            </div>
+            <div class="flex gap-[40px] items-center">
+                <div class="relative w-[200px]">
+
+                    <!-- Input -->
+                    <input type="text" value="Browse" readonly
+                        class="border border-gray bg-gray-white h-[48px] px-5 py-[12px] text-gray-600 cursor-pointer"/>
+                    <span class="absolute right-4 top-1/2 -translate-y-1/2 ">
+                        <img src="./images/Vector(1).png" alt="">
+                    </span>
+                </div>
+
+                <div class="flex gap-8">
+                    <div class="relative">
+                        <img src="./images/Searsh.png"
+                            class="absolute left-3 top-1/2 -translate-y-1/2 w-[18px] h-[17px]" />
+
+                        <!-- Input -->
+                        <input type="text" placeholder="What do you want learn..."
+                            class="radius-[6px] w-[424px] h-[48px] border  border-neutral-black py-2 pl-10 pr-3 rounded-lg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between items-center gap-[24px]">
+            <div class="flex gap-[24px]">
+                <img src="./images/icon-1.png" class="w-[24px] h-[24px]" alt="icon-1">
+                <img src="./images/icon-2.png" class="w-[24px] h-[24px]" alt="icon-2">
+                <img src="./images/icon-3.png" class="w-[24px] h-[24px]" alt="icon-3">
+            </div>
+            <div class="flex gap-[12px]">
+                <button class="button bg-oronge-primary text-oronge">Create
+                    Account</button>
+                <button class="button bg-oronge text-gray-white">Sign In</button>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
