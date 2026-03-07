@@ -23,6 +23,11 @@
              --color-oronge: #FF6636;
              --color-gray-700: #4E5566;
              --color-oronge-700: #993D20;
+             --color-secondary: #EBEBFF;
+             --color-success: #E1F7E3;
+             --color-warning: #FFF2E5;
+             --color-error: #FFF0F0; 
+             --color-gray-50: #F5F7FA;
              /* fonts */
               --font-inter: "Inter", sans-serif;
             /* text size */
@@ -34,6 +39,8 @@
             --text-7xl-line-height: 74px;
             --text-2xl: 24px;
             --text-2xl-line-height: 32px;
+            --text-xs:10px;
+            --text-xs-line-height: 12px;
              
         }
         .div-hero{
@@ -62,6 +69,9 @@
         }
         .p{
            @apply font-inter font-normal text-2xl text-gray-700 my-[40px]
+        }
+        .span{
+            @apply text-oronge-700 px-[6px] py-[4px] font-inter text-xs font-medium
         }
     </style>
 </head>
@@ -154,9 +164,9 @@
                 </h2>
 
                 <!-- Grid -->
-                <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="mt-10 grid gap-6 grid-cols-4">
                     <!-- Card -->
-                    <div class="flex items-center gap-4 bg-[#EBEBFF] px-6 py-5">
+                    <div class="flex items-center gap-4 bg-secondary px-6 py-5">
                         <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
                             <img src="./images/Cpu.png" class="h-6 w-6" alt="">
                         </div>
@@ -166,7 +176,7 @@
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-4  bg-[#E1F7E3] px-6 py-5">
+                    <div class="flex items-center gap-4 bg-success px-6 py-5">
                         <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
                             <img src="./images/Handshake.png" class="h-6 w-6" alt="">
                         </div>
@@ -176,7 +186,7 @@
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-4 bg-[#FFF2E5] px-6 py-5">
+                    <div class="flex items-center gap-4 bg-warning px-6 py-5">
                         <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
                             <img src="./images/CreditCard.png" class="h-6 w-6" alt="">
                         </div>
@@ -186,7 +196,7 @@
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-4 bg-[#FFF0F0] px-6 py-5">
+                    <div class="flex items-center gap-4 bg-error px-6 py-5">
                         <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
                             <img src="./images/ChartBarHorizontal.png" class="h-6 w-6" alt="">
                         </div>
@@ -196,7 +206,7 @@
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-4 bg-[#FFFFFF] px-6 py-5 shadow-sm ring-1 ring-slate-100">
+                    <div class="flex items-center gap-4 bg-gray-white px-6 py-5 shadow-sm ring-1 ring-slate-100">
                         <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-orange-500">
                             <img src="./images/BugDroid.png" class="h-6 w-6" alt="">
                         </div>
@@ -206,7 +216,7 @@
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-4 bg-[#F5F7FA] px-6 py-5">
+                    <div class="flex items-center gap-4 bg-gray-50 px-6 py-5">
                         <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
                             <img src="./images/Receipt.png" class="h-6 w-6" alt="">
                         </div>
@@ -216,7 +226,7 @@
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-4  bg-[#EBEBFF] px-6 py-5">
+                    <div class="flex items-center gap-4  bg-secondary px-6 py-5">
                         <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
                             <img src="./images/MegaphoneSimple.png" class="h-6 w-6" alt="">
                         </div>
@@ -226,7 +236,7 @@
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-4  bg-[#F5F7FA] px-6 py-5 shadow-sm ring-1 ring-slate-100">
+                    <div class="flex items-center gap-4  bg-gray-50 px-6 py-5 shadow-sm ring-1 ring-slate-100">
                         <div
                             class="flex h-12 w-12 items-center justify-center rounded-lg bg-white ring-1 ring-slate-200">
                             <img src="./images/Camera.png" class="h-6 w-6" alt="">
@@ -237,7 +247,7 @@
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-4  bg-[#FFF2E5] px-6 py-5">
+                    <div class="flex items-center gap-4  bg-warning px-6 py-5">
                         <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
                             <img src="./images/Package.png" class="h-6 w-6" alt="">
                         </div>
@@ -247,7 +257,7 @@
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-4  bg-[#FFEEE8] px-6 py-5">
+                    <div class="flex items-center gap-4  bg-oronge-primary px-6 py-5">
                         <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
                             <img src="./images/PenNib.png" class="h-6 w-6" alt="">
                         </div>
@@ -257,7 +267,7 @@
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-4  bg-[#E1F7E3] px-6 py-5">
+                    <div class="flex items-center gap-4  bg-success px-6 py-5">
                         <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
                             <img src="./images/FirstAidKit.png" class="h-6 w-6" alt="">
                         </div>
@@ -267,7 +277,7 @@
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-4  bg-[#FFF2E5] px-6 py-5">
+                    <div class="flex items-center gap-4  bg-warning px-6 py-5">
                         <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white">
                             <img src="./images/Headphones.png" class="h-6 w-6" alt="">
                         </div>
@@ -286,30 +296,30 @@
                     <img src="./images/ArrowRight.png" alt="right-buton">
                 </div>
         </section>
-        <section class="container my-[0px] mx-auto bg-gradient-to-b from-[#F0F2F500] to-[#F0F2F5] py-2">
+        <section class="container my-[0px] space-y-[25px] mx-auto bg-gradient-to-b from-[#F0F2F500] to-[#F0F2F5] ">
             <div class="mx-auto max-w-6xl px-4">
                 <!-- Title -->
-                <h2 class="text-center text-3xl font-extrabold text-slate-900">
+                <h2 class="text-center text-3xl font-extrabold text-slate-900 pt-[80px]">
                     Best selling courses
                 </h2>
                 <!-- Grid -->
-                <div class="mt-10 grid gap-6 grid-cols-4">
-                    <!-- Card -->
-                    <div class="items-center space-y-[15px]">
+                <div class="grid gap-6 grid-cols-5 pt-[40px] pb-[320px]">
+                    <!-- Card 1 -->
+                    <div class="items-center space-y-[15px] bg-white">
                         <div class="flex items-center justify-center rounded-lg">
-                            <img src="./images/Course Images.png" alt="">
+                            <img src="./images/Course Images.png" alt="image-card-1">
                         </div>
                         <div>
                             <div class="mx-[14px] text-center font-semibold space-y-[14px] text-slate-900">
                                 <div class="flex justify-between">
-                                    <span class="bg-[#FFF2E5] text-oronge-700 px-[6px] py-[4px]">Design</span>
+                                    <span class="span bg-warning">Design</span>
                                     <span class="text-oronge">$57</span>
                                 </div>
                                 <div>
                                     <p class="text-start max-w-[450px]">Machine Learning A-Z™: Hands-On Python & R In
                                         Data...</p>
                                 </div>
-                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border[#E9EAF0]">
+                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border-gray">
                                     <div class="flex gap-3 mt-[14px]">
                                         <img src="./images/Vector(2).png" alt="">
                                         <span>5.0</span>
@@ -320,21 +330,22 @@
 
                         </div>
                     </div>
-                    <div class="items-center space-y-[15px]">
+                    <!-- Card 2 -->
+                    <div class="items-center space-y-[15px]  bg-white">
                         <div class="flex items-center justify-center rounded-lg">
-                            <img src="./images/Course Images.png" alt="">
+                            <img src="./images/Course Images(1).png" alt="image-card-2">
                         </div>
                         <div>
                             <div class="mx-[14px] text-center font-semibold space-y-[14px] text-slate-900">
                                 <div class="flex justify-between">
-                                    <span class="bg-[#FFF2E5] text-oronge-700 px-[6px] py-[4px]">Design</span>
+                                    <span class="span bg-secondary">Developments</span>
                                     <span class="text-oronge">$57</span>
                                 </div>
                                 <div>
                                     <p class="text-start max-w-[450px]">Machine Learning A-Z™: Hands-On Python & R In
                                         Data...</p>
                                 </div>
-                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border[#E9EAF0]">
+                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border-gray">
                                     <div class="flex gap-3 mt-[14px]">
                                         <img src="./images/Vector(2).png" alt="">
                                         <span>5.0</span>
@@ -345,21 +356,22 @@
 
                         </div>
                     </div>
-                    <div class="items-center space-y-[15px]">
+                    <!-- Card 3 -->
+                    <div class="items-center space-y-[15px]  bg-white">
                         <div class="flex items-center justify-center rounded-lg">
-                            <img src="./images/Course Images.png" alt="">
+                            <img src="./images/Course Images(2).png" alt="image-card-3">
                         </div>
                         <div>
                             <div class="mx-[14px] text-center font-semibold space-y-[14px] text-slate-900">
                                 <div class="flex justify-between">
-                                    <span class="bg-[#FFF2E5] text-oronge-700 px-[6px] py-[4px]">Design</span>
+                                    <span class="span bg-success">Business</span>
                                     <span class="text-oronge">$57</span>
                                 </div>
                                 <div>
                                     <p class="text-start max-w-[450px]">Machine Learning A-Z™: Hands-On Python & R In
                                         Data...</p>
                                 </div>
-                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border[#E9EAF0]">
+                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border-gray">
                                     <div class="flex gap-3 mt-[14px]">
                                         <img src="./images/Vector(2).png" alt="">
                                         <span>5.0</span>
@@ -370,21 +382,22 @@
 
                         </div>
                     </div>
-                    <div class="items-center space-y-[15px]">
+                    <!-- Card 4 -->
+                    <div class="items-center space-y-[15px] bg-white">
                         <div class="flex items-center justify-center rounded-lg">
-                            <img src="./images/Course Images.png" alt="">
+                            <img src="./images/Course Images(3).png" alt="image-card-4">
                         </div>
                         <div>
                             <div class="mx-[14px] text-center font-semibold space-y-[14px] text-slate-900">
                                 <div class="flex justify-between">
-                                    <span class="bg-[#FFF2E5] text-oronge-700 px-[6px] py-[4px]">Design</span>
+                                    <span class="span bg-secondary">Marketing </span>
                                     <span class="text-oronge">$57</span>
                                 </div>
                                 <div>
                                     <p class="text-start max-w-[450px]">Machine Learning A-Z™: Hands-On Python & R In
                                         Data...</p>
                                 </div>
-                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border[#E9EAF0]">
+                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border-gray">
                                     <div class="flex gap-3 mt-[14px]">
                                         <img src="./images/Vector(2).png" alt="">
                                         <span>5.0</span>
@@ -395,21 +408,22 @@
 
                         </div>
                     </div>
-                    <div class="items-center space-y-[15px]">
+                    <!-- Card 5 -->
+                    <div class="items-center space-y-[15px] bg-white">
                         <div class="flex items-center justify-center rounded-lg">
-                            <img src="./images/Course Images.png" alt="">
+                            <img src="./images/Course Images(4).png" alt="image-card-5">
                         </div>
                         <div>
                             <div class="mx-[14px] text-center font-semibold space-y-[14px] text-slate-900">
                                 <div class="flex justify-between">
-                                    <span class="bg-[#FFF2E5] text-oronge-700 px-[6px] py-[4px]">Design</span>
+                                    <span class="span bg-error">IT & Software</span>
                                     <span class="text-oronge">$57</span>
                                 </div>
                                 <div>
                                     <p class="text-start max-w-[450px]">Machine Learning A-Z™: Hands-On Python & R In
                                         Data...</p>
                                 </div>
-                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border[#E9EAF0]">
+                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border-gray">
                                     <div class="flex gap-3 mt-[14px]">
                                         <img src="./images/Vector(2).png" alt="">
                                         <span>5.0</span>
@@ -420,21 +434,22 @@
 
                         </div>
                     </div>
-                    <div class="items-center space-y-[15px]">
+                    <!-- Card 6 -->
+                    <div class="items-center space-y-[15px] bg-white">
                         <div class="flex items-center justify-center rounded-lg">
-                            <img src="./images/Course Images.png" alt="">
+                            <img src="./images/Course Images(5).png " alt="image-card-6">
                         </div>
                         <div>
                             <div class="mx-[14px] text-center font-semibold space-y-[14px] text-slate-900">
                                 <div class="flex justify-between">
-                                    <span class="bg-[#FFF2E5] text-oronge-700 px-[6px] py-[4px]">Design</span>
+                                    <span class="span bg-warning">Music</span>
                                     <span class="text-oronge">$57</span>
                                 </div>
                                 <div>
                                     <p class="text-start max-w-[450px]">Machine Learning A-Z™: Hands-On Python & R In
                                         Data...</p>
                                 </div>
-                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border[#E9EAF0]">
+                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border-gray">
                                     <div class="flex gap-3 mt-[14px]">
                                         <img src="./images/Vector(2).png" alt="">
                                         <span>5.0</span>
@@ -445,21 +460,22 @@
 
                         </div>
                     </div>
-                    <div class="items-center space-y-[15px]">
+                    <!-- Card 7 -->
+                    <div class="items-center space-y-[15px] bg-white">
                         <div class="flex items-center justify-center rounded-lg">
-                            <img src="./images/Course Images.png" alt="">
+                            <img src="./images/Course Images(6).png" alt="image-card-7">
                         </div>
                         <div>
                             <div class="mx-[14px] text-center font-semibold space-y-[14px] text-slate-900">
                                 <div class="flex justify-between">
-                                    <span class="bg-[#FFF2E5] text-oronge-700 px-[6px] py-[4px]">Design</span>
+                                    <span class="span bg-secondary">Marketing</span>
                                     <span class="text-oronge">$57</span>
                                 </div>
                                 <div>
                                     <p class="text-start max-w-[450px]">Machine Learning A-Z™: Hands-On Python & R In
                                         Data...</p>
                                 </div>
-                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border[#E9EAF0]">
+                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border-gray">
                                     <div class="flex gap-3 mt-[14px]">
                                         <img src="./images/Vector(2).png" alt="">
                                         <span>5.0</span>
@@ -470,21 +486,22 @@
 
                         </div>
                     </div>
-                    <div class="items-center space-y-[15px]">
+                    <!-- Card 8 -->
+                    <div class="items-center space-y-[15px] bg-white">
                         <div class="flex items-center justify-center rounded-lg">
-                            <img src="./images/Course Images.png" alt="">
+                            <img src="./images/Course Images(7).png" alt="image-card-8">
                         </div>
                         <div>
                             <div class="mx-[14px] text-center font-semibold space-y-[14px] text-slate-900">
                                 <div class="flex justify-between">
-                                    <span class="bg-[#FFF2E5] text-oronge-700 px-[6px] py-[4px]">Design</span>
+                                    <span class="span bg-success">Health & Fitness</span>
                                     <span class="text-oronge">$57</span>
                                 </div>
                                 <div>
                                     <p class="text-start max-w-[450px]">Machine Learning A-Z™: Hands-On Python & R In
                                         Data...</p>
                                 </div>
-                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border[#E9EAF0]">
+                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border-gray">
                                     <div class="flex gap-3 mt-[14px]">
                                         <img src="./images/Vector(2).png" alt="">
                                         <span>5.0</span>
@@ -495,10 +512,316 @@
 
                         </div>
                     </div>
-                    
+                    <!-- Card 9 -->
+                    <div class="items-center space-y-[15px] bg-white">
+                        <div class="flex items-center justify-center rounded-lg">
+                            <img src="./images/Course Images(8).png" alt="image-card-9">
+                        </div>
+                        <div>
+                            <div class="mx-[14px] text-center font-semibold space-y-[14px] text-slate-900">
+                                <div class="flex justify-between">
+                                    <span class="span bg-oronge-primary">Design</span>
+                                    <span class="text-oronge">$57</span>
+                                </div>
+                                <div>
+                                    <p class="text-start max-w-[450px]">Machine Learning A-Z™: Hands-On Python & R In
+                                        Data...</p>
+                                </div>
+                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border-gray">
+                                    <div class="flex gap-3 mt-[14px]">
+                                        <img src="./images/Vector(2).png" alt="">
+                                        <span>5.0</span>
+                                    </div>
+                                    <span class="mt-[14px]">265.7K students</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card 10 -->
+                    <div class="items-center space-y-[15px] bg-white">
+                        <div class="flex items-center justify-center rounded-lg">
+                            <img src="./images/Course Images(9).png" alt="image-card-10">
+                        </div>
+                        <div>
+                            <div class="mx-[14px] text-center font-semibold space-y-[14px] text-slate-900">
+                                <div class="flex justify-between">
+                                    <span class="span bg-warning">Design</span>
+                                    <span class="text-oronge">$57</span>
+                                </div>
+                                <div>
+                                    <p class="text-start max-w-[450px]">Machine Learning A-Z™: Hands-On Python & R In
+                                        Data...</p>
+                                </div>
+                                <div class="flex justify-between text-sm text-slate-500  border-t-1 border-gray">
+                                    <div class="flex gap-3 mt-[14px]">
+                                        <img src="./images/Vector(2).png" alt="">
+                                        <span>5.0</span>
+                                    </div>
+                                    <span class="mt-[14px]">265.7K students</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
         </section>
+     <section class="container relative mx-auto py-[64px]">
+  <div
+    class="absolute top-[-200px] left-1/2 w-full max-w-5xl -translate-x-1/2 border border-[#E9EAF0] bg-white px-[40px] py-[60px]">
+
+    <!-- heading -->
+    <div class="flex items-start justify-between gap-10">
+      <h2 class="text-[40px] font-semibold text-[#1D2026]">
+        Our feature courses
+      </h2>
+
+      <p class="max-w-[360px] text-[16px] leading-[24px] text-[#6E7485]">
+        Vestibulum sed dolor sed diam mollis maximus vel nec dolor.
+        Donec varius purus et eleifend porta.
+      </p>
+    </div>
+
+    <!-- cards -->
+    <div class="mt-10 grid grid-cols-2 gap-5">
+
+      <!-- card 1 -->
+      <div class="overflow-hidden border border-[#E9EAF0] bg-white">
+        <div class="flex">
+          <div class="w-[160px] shrink-0">
+            <img src="./images/Course Images(3).png" alt="course image" class="h-full w-full object-cover">
+          </div>
+
+          <div class="flex flex-1 flex-col">
+            <div class="p-4">
+              <div class="flex items-start justify-between gap-3">
+                <span class="inline-block bg-[#E1F7E3] px-2 py-1 text-[10px] font-medium uppercase text-[#15711F]">
+                  Health & Fitness
+                </span>
+
+                <div class="flex items-center gap-1">
+                  <span class="text-[16px] font-semibold text-[#1D2026]">$14.00</span>
+                  <span class="text-[12px] text-[#A1A5B3] line-through">$26.00</span>
+                </div>
+              </div>
+
+              <h3 class="mt-3 text-[15px] leading-[22px] text-[#1D2026]">
+                Investing In Stocks The Complete Course! (13 H...
+              </h3>
+
+              <div class="mt-3 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <img src="./images/Photo.png" alt="author" class="h-7 w-7 rounded-full object-cover">
+                  <span class="text-[13px] text-[#4E5566]">Kevin Gilbert</span>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <img src="./images/Vector(2).png" alt="star" class="h-4 w-4">
+                  <span class="text-[13px] text-[#1D2026]">5.0</span>
+                  <span class="text-[13px] text-[#8C94A3]">(357,914)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-5 border-t border-[#E9EAF0] px-4 py-3">
+              <div class="flex items-center gap-1">
+                <img src="./images/User(1).png" alt="" class="h-4 w-4">
+                <span class="text-[13px] text-[#4E5566]">265.7K students</span>
+              </div>
+
+              <div class="flex items-center gap-1">
+                <img src="./images/chart.png" alt="" class="h-4 w-4">
+                <span class="text-[13px] text-[#4E5566]">Beginner</span>
+              </div>
+
+              <div class="flex items-center gap-1">
+                <img src="./images/Clock.png" alt="" class="h-4 w-4">
+                <span class="text-[#4E5566]">6hour</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 2 -->
+      <div class="overflow-hidden border border-[#E9EAF0] bg-white">
+        <div class="flex">
+          <div class="w-[160px] shrink-0">
+            <img src="./images/Course Images(4).png" alt="course image" class="h-full w-full object-cover">
+          </div>
+
+          <div class="flex flex-1 flex-col">
+            <div class="p-4">
+              <div class="flex items-start justify-between gap-3">
+                <span class="inline-block bg-[#FFF0F0] px-2 py-1 text-[10px] font-medium uppercase text-[#E34444]">
+                  Personal Development
+                </span>
+
+                <div class="flex items-center gap-1">
+                  <span class="text-[16px] font-semibold text-[#1D2026]">$14.00</span>
+                  <span class="text-[12px] text-[#A1A5B3] line-through">$26.00</span>
+                </div>
+              </div>
+
+              <h3 class="mt-3 text-[15px] leading-[22px] text-[#1D2026]">
+                Google Analytics Certification - Learn How To...
+              </h3>
+
+              <div class="mt-3 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <img src="./images/Photo.png" alt="author" class="h-7 w-7 rounded-full object-cover">
+                  <span class="text-[13px] text-[#4E5566]">Kevin Gilbert</span>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <img src="./images/Vector(2).png" alt="star" class="h-4 w-4">
+                  <span class="text-[13px] text-[#1D2026]">5.0</span>
+                  <span class="text-[13px] text-[#8C94A3]">(357,914)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-5 border-t border-[#E9EAF0] px-4 py-3">
+              <div class="flex items-center gap-1">
+                <img src="./images/User(1).png" alt="" class="h-4 w-4">
+                <span class="text-[13px] text-[#4E5566]">265.7K students</span>
+              </div>
+
+              <div class="flex items-center gap-1">
+                <img src="./images/chart.png" alt="" class="h-4 w-4">
+                <span class="text-[13px] text-[#4E5566]">Beginner</span>
+              </div>
+
+              <div class="flex items-center gap-1">
+                <img src="./images/Clock.png" alt="" class="h-4 w-4">
+                <span class="text-[#4E5566]">6hour</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 3 -->
+      <div class="overflow-hidden border border-[#E9EAF0] bg-white">
+        <div class="flex">
+          <div class="w-[160px] shrink-0">
+            <img src="./images/Course Images(5).png" alt="course image" class="h-full w-full object-cover">
+          </div>
+
+          <div class="flex flex-1 flex-col">
+            <div class="p-4">
+              <div class="flex items-start justify-between gap-3">
+                <span class="inline-block bg-[#FFF4E5] px-2 py-1 text-[10px] font-medium uppercase text-[#C8811A]">
+                  Productivity
+                </span>
+
+                <div class="flex items-center gap-1">
+                  <span class="text-[16px] font-semibold text-[#1D2026]">$14.00</span>
+                  <span class="text-[12px] text-[#A1A5B3] line-through">$26.00</span>
+                </div>
+              </div>
+
+              <h3 class="mt-3 text-[15px] leading-[22px] text-[#FF6636]">
+                Adobe XD for Web Design: Essential Principles
+              </h3>
+
+              <div class="mt-3 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <img src="./images/Photo.png" alt="author" class="h-7 w-7 rounded-full object-cover">
+                  <span class="text-[13px] text-[#4E5566]">Kevin Gilbert</span>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <img src="./images/Vector(2).png" alt="star" class="h-4 w-4">
+                  <span class="text-[13px] text-[#1D2026]">5.0</span>
+                  <span class="text-[13px] text-[#8C94A3]">(357,914)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-5 border-t border-[#E9EAF0] px-4 py-3">
+              <div class="flex items-center gap-1">
+                <img src="./images/User(1).png" alt="" class="h-4 w-4">
+                <span class="text-[13px] text-[#4E5566]">265.7K students</span>
+              </div>
+
+              <div class="flex items-center gap-1">
+                <img src="./images/chart.png" alt="" class="h-4 w-4">
+                <span class="text-[13px] text-[#4E5566]">Beginner</span>
+              </div>
+
+              <div class="flex items-center gap-1">
+                <img src="./images/Clock.png" alt="" class="h-4 w-4">
+                <span class="text-[#4E5566]">6hour</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 4 -->
+      <div class="overflow-hidden border border-[#E9EAF0] bg-white">
+        <div class="flex">
+          <div class="w-[160px] shrink-0">
+            <img src="./images/Course Images(6).png" alt="course image" class="h-full w-full object-cover">
+          </div>
+
+          <div class="flex flex-1 flex-col">
+            <div class="p-4">
+              <div class="flex items-start justify-between gap-3">
+                <span class="inline-block bg-[#FFF4E5] px-2 py-1 text-[10px] font-medium uppercase text-[#C8811A]">
+                  Music
+                </span>
+
+                <div class="flex items-center gap-1">
+                  <span class="text-[16px] font-semibold text-[#1D2026]">$14.00</span>
+                  <span class="text-[12px] text-[#A1A5B3] line-through">$26.00</span>
+                </div>
+              </div>
+
+              <h3 class="mt-3 text-[15px] leading-[22px] text-[#1D2026]">
+                The Python Mega Course: Build 10 Real World ...
+              </h3>
+
+              <div class="mt-3 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <img src="./images/Photo.png" alt="author" class="h-7 w-7 rounded-full object-cover">
+                  <span class="text-[13px] text-[#4E5566]">Kevin Gilbert</span>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <img src="./images/Vector(2).png" alt="star" class="h-4 w-4">
+                  <span class="text-[13px] text-[#1D2026]">5.0</span>
+                  <span class="text-[13px] text-[#8C94A3]">(357,914)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-5 border-t border-[#E9EAF0] px-4 py-3">
+              <div class="flex items-center gap-1">
+                <img src="./images/User(1).png" alt="" class="h-4 w-4">
+                <span class="text-[13px] text-[#4E5566]">265.7K students</span>
+              </div>
+
+              <div class="flex items-center gap-1">
+                <img src="./images/chart.png" alt="" class="h-4 w-4">
+                <span class="text-[13px] text-[#4E5566]">Beginner</span>
+              </div>
+
+              <div class="flex items-center gap-1">
+                <img src="./images/Clock.png" alt="" class="h-4 w-4">
+                <span class="text-[#4E5566]">6hour</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
     </main>
 </body>
 
