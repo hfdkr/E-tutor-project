@@ -85,20 +85,20 @@
 <body>
     <div class="div-hero">
         <nav class="nav">
-            <a href="#Home" class="home-1">Home</a>
-            <a href="#Courses" class="p-[16px]">Courses</a>
-            <a href="#About" class="p-[16px]">About</a>
-            <a href="#Contact" class="p-[16px]">Contact</a>
-            <a href="#Instructor" class="p-[16px]">Become an Instructor</a>
+            <a href="#Home" class="home-1 focus:border-t-2 focus:border-orange-500">Home</a>
+            <a href="#Courses" class="p-[16px]  focus:border-t-2 focus:border-orange-500">Courses</a>
+            <a href="#About" class="p-[16px] focus:border-t-2 focus:border-orange-500">About</a>
+            <a href="#Contact" class="p-[16px] focus:border-t-2 focus:border-orange-500">Contact</a>
+            <a href="#Instructor" class="p-[16px] focus:border-t-2 focus:border-orange-500">Become an Instructor</a>
         </nav>
         <div class="div-bar">
-            <div class="flex gap-[6px] p-[16px]">
+            <div class="flex gap-[6px] p-[16px] hover:bg-gray hover:text-oronge">
                 <span>USD</span>
                 <span class="mt-[10px]">
                     <img src="./images/Vector(1).png" alt="drop-down">
                 </span>
             </div>
-            <div class="flex gap-[6px] p-[16px]">
+            <div class="flex gap-[6px] p-[16px] hover:bg-gray hover:text-oronge">
                 <span>English</span>
                 <span class="mt-[10px]">
                     <img src="./images/Vector(1).png" alt="drop-down">
@@ -107,14 +107,13 @@
         </div>
     </div>
     <header class="header">
-        <div class="flex items-center justify-between gap-[16px]">
-            <div class="flex items-center ">
+        <div class="div-header">
+            <div class="flex items-center">
                 <img src="./images/logo.png" alt="Logo">
-                <h1 class="text-3xl font-semibold tracking-[-3%] text-black font-inter pl-[8px] pr-[50px]">E-tutor</h1>
+                <h1 class="h1">E-tutor</h1>
             </div>
-            <div class="flex gap-[40px] items-center">
+            <div class="div-input">
                 <div class="relative w-[200px]">
-
                     <!-- Input -->
                     <input type="text" value="Browse" readonly
                         class="border border-gray bg-gray-white h-[48px] px-5 py-[12px] text-gray-600 cursor-pointer" />
@@ -122,15 +121,13 @@
                         <img src="./images/Vector(1).png" alt="Vector">
                     </span>
                 </div>
-
                 <div class="flex gap-8">
                     <div class="relative">
                         <img src="./images/Searsh.png" alt="img-searsh"
                             class="absolute left-3 top-1/2 -translate-y-1/2 w-[18px] h-[17px]" />
-
                         <!-- Input -->
                         <input type="text" placeholder="What do you want learn..."
-                            class="radius-[6px] w-[424px] h-[48px] border  border-neutral-black py-2 pl-10 pr-3 rounded-lg" />
+                            class="radius-[6px] w-[424px] h-[48px] border  border-gray py-2 pl-10 pr-3" />
                     </div>
                 </div>
             </div>
@@ -142,13 +139,16 @@
                 <img src="./images/icon-3.png" class="w-[24px] h-[24px]" alt="icon-3">
             </div>
             <div class="flex gap-[12px]">
-                <button class="button bg-oronge-primary text-oronge">Create
+                <button
+                    class="button bg-oronge-primary text-oronge hover:bg-gray hover:text-oronge hover:cursor-pointer">Create
                     Account</button>
-                <button class="button bg-oronge text-gray-white">Sign In</button>
+                <button
+                    class="button bg-oronge text-gray-white hover:bg-gray hover:text-oronge hover:cursor-pointer">Sign
+                    In</button>
             </div>
         </div>
     </header>
-    <main class="">
+    <main>
         <section class="section">
             <div class="flex">
                 <div class="bg-neutral-white py-[35px] px-[162px] items-center">
@@ -572,7 +572,7 @@
                     </div>
 
                 </div>
-
+            </div>
         </section>
         <section class="container relative mx-auto py-[64px]">
             <div
@@ -1173,7 +1173,6 @@
             </div>
 
         </section>
-        <!-- Trusted companies -->
         <section class="bg-white py-16 mt-[350px]">
             <div class="mx-auto max-w-6xl px-4">
                 <div class="grid items-center gap-10 lg:grid-cols-[320px_1fr]">
@@ -1226,164 +1225,168 @@
                 </div>
             </div>
         </section>
+    </main>
+    <footer class="bg-[#111827] text-white">
+        <div class="mx-auto max-w-6xl px-4">
 
-        <!-- Dark CTA + Footer -->
-        <footer class="bg-[#111827] text-white">
-            <div class="mx-auto max-w-6xl px-4">
+            <!-- Top CTA -->
+            <div class="grid gap-10 border-b border-white/10 py-16 lg:grid-cols-[1.2fr_1fr] lg:items-center">
 
-                <!-- Top CTA -->
-                <div class="grid gap-10 border-b border-white/10 py-16 lg:grid-cols-[1.2fr_1fr] lg:items-center">
+                <div>
+                    <h2
+                        class="max-w-[524px] text-[40px] font-semibold font-inter leading-[48px] tracking-[-1%] text-[#FFFFFF]">
+                        Start learning with 67.1k students around the world.
+                    </h2>
 
-                    <div>
-                        <h2 class="max-w-[524px] text-[40px] font-semibold font-inter leading-[48px] tracking-[-1%] text-[#FFFFFF]">
-                            Start learning with 67.1k students around the world.
-                        </h2>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <button
+                            class="bg-[#FF6636] px-[24px] py-4 text-[16px] leading-[-0.8%] tracking-[-0.8%] font-semibold text-white">
+                            Join The Family
+                        </button>
 
-                        <div class="mt-8 flex flex-wrap gap-4">
-                            <button class="bg-[#FF6636] px-[24px] py-4 text-[16px] leading-[-0.8%] tracking-[-0.8%] font-semibold text-white">
-                                Join The Family
-                            </button>
-
-                            <button class="bg-white/10 px-6 py-4 text-[16px] font-semibold text-white">
-                                Browse All Courses
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Stats -->
-                    <div class="grid grid-cols-3 gap-8">
-                        <div>
-                            <h3 class="text-[40px] font-semibold leading-none text-white">6.3k</h3>
-                            <p class="mt-3 text-[14px] text-[#8C94A3]">Online courses</p>
-                        </div>
-
-                        <div>
-                            <h3 class="text-[40px] font-semibold leading-none text-white">26k</h3>
-                            <p class="mt-3 text-[14px] text-[#8C94A3]">Certified Instructor</p>
-                        </div>
-
-                        <div>
-                            <h3 class="text-[40px] font-semibold leading-none text-white">99.9%</h3>
-                            <p class="mt-3 text-[14px] text-[#8C94A3]">Success Rate</p>
-                        </div>
+                        <button class="bg-white/10 px-6 py-4 text-[16px] font-semibold text-white">
+                            Browse All Courses
+                        </button>
                     </div>
                 </div>
 
-                <!-- Main footer -->
-                <div class="grid gap-10 border-b border-white/10 py-16 md:grid-cols-2 lg:grid-cols-5">
-
-                    <!-- Brand -->
-                    <div class="lg:col-span-1">
-                        <div class="flex items-center gap-3">
-                            <img src="./images/logo.png" alt="logo" class="h-8 w-8 object-contain">
-                            <h3 class="text-[32px] font-semibold text-white">E-tutor</h3>
-                        </div>
-
-                        <p class="mt-5 max-w-[260px] text-[14px] leading-[22px] text-[#8C94A3]">
-                            Aliquam rhoncus ligula est, non pulvinar elit convallis nec. Donec mattis odio at.
-                        </p>
-
-                        <!-- Social -->
-                        <div class="mt-6 flex gap-3"> 
-                            <a href="#facebook"
-                                class="flex h-[46px] w-[46px] items-center justify-center bg-white/10"><img src="./images/Frame 75.png" alt="Facebook"></a>
-                            <a href="#Instagram"
-                                class="flex h-[46px] w-[46px] items-center justify-center bg-white/10 text-sm text-white"><img src="./images/Instragarm.png" alt="Instagram"></a>
-                            <a href="#linkedin"
-                                class="flex h-[46px] w-[46px] items-center justify-center bg-[#FF6636] text-sm text-white"><img src="./images/Linkedin.png" alt="linkedin"></a>
-                            <a href="#X"
-                                class="flex h-[46px] w-[46px] items-center justify-center bg-white/10 text-sm text-white"><img src="./images/Twitter.png" alt="X"></a>
-                            <a href="#Youtub"
-                                class="flex h-[46px] w-[46px] items-center justify-center bg-white/10 text-sm text-white"> <img src="./images/Frame 74.png" alt="Youtub"></a>
-                        </div>
-                    </div>
-
-                    <!-- Links 1 -->
+                <!-- Stats -->
+                <div class="grid grid-cols-3 gap-8">
                     <div>
-                        <h4 class="text-[12px] font-semibold uppercase tracking-[0.08em] text-white">
-                            Top 4 Category
-                        </h4>
-
-                        <ul class="mt-5 space-y-3 text-[14px] text-[#8C94A3]">
-                            <li><a href="#" class="hover:text-white">Development</a></li>
-                            <li><a href="#" class="hover:text-white">Finance & Accounting</a></li>
-                            <li><a href="#" class="hover:text-white">Design</a></li>
-                            <li><a href="#" class="hover:text-white">Business</a></li>
-                        </ul>
+                        <h3 class="text-[40px] font-semibold leading-none text-white">6.3k</h3>
+                        <p class="mt-3 text-[14px] text-[#8C94A3]">Online courses</p>
                     </div>
 
-                    <!-- Links 2 -->
                     <div>
-                        <h4 class="text-[12px] font-semibold uppercase tracking-[0.08em] text-white">
-                            Quick Links
-                        </h4>
-
-                        <ul class="mt-5 space-y-3 text-[14px] text-[#8C94A3]">
-                            <li><a href="#" class="hover:text-white">About</a></li>
-                            <li class="flex justify-between items-center gap-2 border-b border-[#FF6636] px-2 py-1">
-                                <a href="#" class="text-white">Become Instructor</a>
-                                <span ><img src="./images/ArrowRight(1).png" alt="arrow-right"></span>
-                            </li>
-                            <li><a href="#" class="hover:text-white">Contact</a></li>
-                            <li><a href="#" class="hover:text-white">Career</a></li>
-                        </ul>
+                        <h3 class="text-[40px] font-semibold leading-none text-white">26k</h3>
+                        <p class="mt-3 text-[14px] text-[#8C94A3]">Certified Instructor</p>
                     </div>
 
-                    <!-- Links 3 -->
                     <div>
-                        <h4 class="text-[12px] font-semibold uppercase tracking-[0.08em] text-white">
-                            Support
-                        </h4>
-
-                        <ul class="mt-5 space-y-3 text-[14px] text-[#8C94A3]">
-                            <li><a href="#" class="hover:text-white">Help Center</a></li>
-                            <li><a href="#" class="hover:text-white">FAQs</a></li>
-                            <li><a href="#" class="hover:text-white">Terms & Condition</a></li>
-                            <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- App buttons -->
-                    <div>
-                        <h4 class="text-[12px] font-semibold uppercase tracking-[0.08em] text-white">
-                            Download Our App
-                        </h4>
-
-                        <div class="mt-5 space-y-4">
-                            <a href="#" class="flex items-center gap-3 bg-white/10 px-4 py-3">
-                                <img src="./images/apple 1.png" alt="apple" class="h-8 w-8 object-contain">
-                                <div>
-                                    <p class="text-[11px] text-[#8C94A3]">Download on the</p>
-                                    <p class="text-[15px] font-medium text-white">App Store</p>
-                                </div>
-                            </a>
-
-                            <a href="#" class="flex items-center gap-3 bg-white/10 px-4 py-3">
-                                <img src="./images/google-play-5 1.png" alt="playstore" class="h-8 w-8 object-contain">
-                                <div>
-                                    <p class="text-[11px] text-[#8C94A3]">Download on the</p>
-                                    <p class="text-[15px] font-medium text-white">Play Store</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bottom footer -->
-                <div class="flex flex-col gap-6 py-8 md:flex-row md:items-center md:justify-between">
-                    <p class="text-[14px] text-[#8C94A3]">
-                        &copy; 2021 - Eduflex. Designed by Templatecookie. All rights reserved
-                    </p>
-
-                    <div
-                        class="flex items-center justify-between border border-white/10 px-4 py-3 text-[14px] text-[#8C94A3] md:w-[160px]">
-                        <span>English</span>
-                        <img src="./images/Vector(1).png" alt="vector">
+                        <h3 class="text-[40px] font-semibold leading-none text-white">99.9%</h3>
+                        <p class="mt-3 text-[14px] text-[#8C94A3]">Success Rate</p>
                     </div>
                 </div>
             </div>
-        </footer>
-    </main>
+
+            <!-- Main footer -->
+            <div class="grid gap-10 border-b border-white/10 py-16 md:grid-cols-2 lg:grid-cols-5">
+
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-3">
+                        <img src="./images/logo.png" alt="logo" class="h-8 w-8 object-contain">
+                        <h3 class="text-[32px] font-semibold text-white">E-tutor</h3>
+                    </div>
+
+                    <p class="mt-5 max-w-[260px] text-[14px] leading-[22px] text-[#8C94A3]">
+                        Aliquam rhoncus ligula est, non pulvinar elit convallis nec. Donec mattis odio at.
+                    </p>
+
+                    <!-- Social -->
+                    <div class="mt-6 flex gap-3">
+                        <a href="#facebook" class="flex h-[46px] w-[46px] items-center justify-center bg-white/10"><img
+                                src="./images/Frame 75.png" alt="Facebook"></a>
+                        <a href="#Instagram"
+                            class="flex h-[46px] w-[46px] items-center justify-center bg-white/10 text-sm text-white"><img
+                                src="./images/Instragarm.png" alt="Instagram"></a>
+                        <a href="#linkedin"
+                            class="flex h-[46px] w-[46px] items-center justify-center bg-[#FF6636] text-sm text-white"><img
+                                src="./images/Linkedin.png" alt="linkedin"></a>
+                        <a href="#X"
+                            class="flex h-[46px] w-[46px] items-center justify-center bg-white/10 text-sm text-white"><img
+                                src="./images/Twitter.png" alt="X"></a>
+                        <a href="#Youtub"
+                            class="flex h-[46px] w-[46px] items-center justify-center bg-white/10 text-sm text-white">
+                            <img src="./images/Frame 74.png" alt="Youtub"></a>
+                    </div>
+                </div>
+
+                <!-- Links 1 -->
+                <div>
+                    <h4 class="text-[12px] font-semibold uppercase tracking-[0.08em] text-white">
+                        Top 4 Category
+                    </h4>
+
+                    <ul class="mt-5 space-y-3 text-[14px] text-[#8C94A3]">
+                        <li><a href="#" class="hover:text-white">Development</a></li>
+                        <li><a href="#" class="hover:text-white">Finance & Accounting</a></li>
+                        <li><a href="#" class="hover:text-white">Design</a></li>
+                        <li><a href="#" class="hover:text-white">Business</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div>
+                    <h4 class="text-[12px] font-semibold uppercase tracking-[0.08em] text-white">
+                        Quick Links
+                    </h4>
+
+                    <ul class="mt-5 space-y-3 text-[14px] text-[#8C94A3]">
+                        <li><a href="#" class="hover:text-white">About</a></li>
+                        <li class="flex justify-between items-center gap-2 border-b border-[#FF6636] px-2 py-1">
+                            <a href="#" class="text-white">Become Instructor</a>
+                            <span><img src="./images/ArrowRight(1).png" alt="arrow-right"></span>
+                        </li>
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                        <li><a href="#" class="hover:text-white">Career</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 3 -->
+                <div>
+                    <h4 class="text-[12px] font-semibold uppercase tracking-[0.08em] text-white">
+                        Support
+                    </h4>
+
+                    <ul class="mt-5 space-y-3 text-[14px] text-[#8C94A3]">
+                        <li><a href="#" class="hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white">FAQs</a></li>
+                        <li><a href="#" class="hover:text-white">Terms & Condition</a></li>
+                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- App buttons -->
+                <div>
+                    <h4 class="text-[12px] font-semibold uppercase tracking-[0.08em] text-white">
+                        Download Our App
+                    </h4>
+
+                    <div class="mt-5 space-y-4">
+                        <a href="#" class="flex items-center gap-3 bg-white/10 px-4 py-3">
+                            <img src="./images/apple 1.png" alt="apple" class="h-8 w-8 object-contain">
+                            <div>
+                                <p class="text-[11px] text-[#8C94A3]">Download on the</p>
+                                <p class="text-[15px] font-medium text-white">App Store</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="flex items-center gap-3 bg-white/10 px-4 py-3">
+                            <img src="./images/google-play-5 1.png" alt="playstore" class="h-8 w-8 object-contain">
+                            <div>
+                                <p class="text-[11px] text-[#8C94A3]">Download on the</p>
+                                <p class="text-[15px] font-medium text-white">Play Store</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom footer -->
+            <div class="flex flex-col gap-6 py-8 md:flex-row md:items-center md:justify-between">
+                <p class="text-[14px] text-[#8C94A3]">
+                    &copy; 2021 - Eduflex. Designed by Templatecookie. All rights reserved
+                </p>
+
+                <div
+                    class="flex items-center justify-between border border-white/10 px-4 py-3 text-[14px] text-[#8C94A3] md:w-[160px]">
+                    <span>English</span>
+                    <img src="./images/Vector(1).png" alt="vector">
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
